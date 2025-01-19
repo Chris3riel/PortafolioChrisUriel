@@ -1,5 +1,5 @@
 **Portafolio de Chris Uriel Domínguez Pineda**
-
+![alt text](image.png)
 Este es mi portafolio personal, creado con HTML, CSS y Tailwind CSS. Aquí se presentan mis habilidades y experiencia en el desarrollo de software, análisis de datos y tecnología.
 
 **Contenido**
