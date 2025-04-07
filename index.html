@@ -7,6 +7,14 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./public/styles/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="./favicon/site.webmanifest" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body class="bg-gray-100 text-gray-900">
 
@@ -20,32 +28,53 @@
         <li><a href="#skills" class="hover:text-blue-300">Habilidades</a></li>
         <li><a href="#contact" class="hover:text-blue-300">Contacto</a></li>
       </ul>
+      <div>
+        <a href="mailto:chrisurpineda@gmail.com"><i class='bx bx-envelope' ></i></a>
+        <a href="https://github.com/Chris3riel" class="text-xl font-bold"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/chris-uriel-dominguez-pineda-32a206271" class="text-xl font-bold"><i class='bx bxl-linkedin-square'></i></a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <header class="bg-cover text-white text-center py-20 square-in-hesitate-animation" style="background-image: url('./public/img/background.webp');">
     <h1 class="text-4xl font-bold">Hola, soy Chris Uriel Domínguez Pineda</h1>
-    <p class="mt-4 text-lg">Desarrollador de software, analista de datos y apasionado por la tecnología.</p>
+    <p class="mt-4 text-lg">DevOps - Desarrollo Web - Análisis de Datos.</p>
     <a href="#projects" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-full shadow-md font-medium hover:bg-gray-200">
       Explorar proyectos
     </a>
   </header>
 
   <!-- Sobre mí -->
-  <section id="about" class="py-20 bg-gray-100 wipe-in-right">
+  <section id="about" class="py-20 bg-gray-100 wipe-in-right animate__bounce">
     <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Sobre mí</h2>
-      <p class="text-lg leading-relaxed">
-        Soy un licenciado en informática con experiencia en desarrollo de software, análisis de datos y gestión de proyectos tecnológicos. Me especializo en soluciones innovadoras que generan valor para las empresas.
-      </p>
+      <h2 class="text-3xl font-bold mb-6">SOBRE MÍ</h2>
+      <div class="md:grid md:grid-cols-2">
+        <img class="m-auto h-64 w-48 p-4" src="./public/img/profile.jpg" alt="">
+
+        <p class="m-auto text-lg leading-relaxed text-justify p-4">
+          Soy un <b>Desarrollador frontend y backend</b> especializado en <b>DevOps, Análisis de
+          Datos y Desarrollo Web</b>, con una fuerte pasión por diseñar <b>sistemas escalables y
+          altamente performantes.</b> Me apasiona la <b>arquitectura de software moderna</b>,
+          implementando patrones como <b>CQRS (Command Query Responsibility Segregation) y
+          Event Sourcing</b> para construir plataformas robustas, similares a las utilizadas por gigantes
+          tecnológicos como <b>Netflix, Uber y Airbnb.</b>
+          <br><br>
+          En mis proyectos <b>freelance</b>, he desarrollado <b>soluciones de eCommerce y APIs
+          distribuidas</b> bajo esta arquitectura, garantizando <b>escalabilidad, consistencia y alta
+          disponibilidad.</b> Además, me enfoco en la <b>experiencia de usuario (UX/UI)</b>, combinando
+          mis habilidades técnicas con un enfoque en <b>diseño intuitivo y centrado en el usuario</b>
+          para crear productos digitales atractivos y funcionales.
+        </p>
+      </div>
+      
     </div>
   </section>
 
   <!-- Proyectos -->
   <section id="projects" class="py-20 bg-white circle-in-top-left-animation">
     <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-6">Proyectos Destacados</h2>
+      <h2 class="text-3xl font-bold text-center mb-6">PROYECTOS DESTACADOS</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         <!-- Proyecto 1 -->
@@ -53,7 +82,7 @@
           <img src="https://github.com/Chris3riel/QrSystem_Generator/raw/main/image-2.png" alt="Sistema Generador de QR" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold">Sistema Generador de QR</h3>
-            <p class="mt-2 text-gray-600">Creación de un sistema para generar y gestionar etiquetas QR para motores industriales.</p>
+            <p class="mt-2 text-gray-600 text-justify">Creación de un sistema para generar y gestionar etiquetas QR para motores industriales.</p>
             <a href="https://github.com/Chris3riel/QrSystem_Generator" class="text-blue-600 mt-4 inline-block">Ver más</a>
           </div>
         </div>
@@ -63,7 +92,7 @@
           <iframe width="500" height="200" src="https://lookerstudio.google.com/embed/reporting/ef4bba2a-d292-47ef-a819-5f729892fb68/page/shYZE" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
           <div class="p-6">
             <h3 class="text-xl font-semibold">Optimización de Rutas Aéreas</h3>
-            <p class="mt-2 text-gray-600">Se desarrollo el proyecto de análisis predictivo y optimización de rutas aéreas para la empresa Udata Consulting integrando tecnicas de machine learning y mas tecnologías.</p>
+            <p class="mt-2 text-gray-600 text-justify">Se desarrollo el proyecto de análisis predictivo y optimización de rutas aéreas para la empresa Udata Consulting integrando tecnicas de machine learning y mas tecnologías.</p>
             <a href="https://lookerstudio.google.com/u/0/reporting/ef4bba2a-d292-47ef-a819-5f729892fb68/page/shYZE" class="text-blue-600 mt-4 inline-block">Ver más</a>
           </div>
         </div>
@@ -73,7 +102,7 @@
           <img src="https://github.com/Chris3riel/ImageGeneratorReact/raw/main/image.png" alt="WAY.ia" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold">WAY.ia</h3>
-            <p class="mt-2 text-gray-600">Proyecto de inteligencia artificial generativa de imágenes con modelos avanzados de aprendizaje automático.</p>
+            <p class="mt-2 text-gray-600 text-justify">Proyecto de inteligencia artificial generativa de imágenes con modelos avanzados de aprendizaje automático.</p>
             <a href="https://github.com/Chris3riel/ImageGeneratorReact" class="text-blue-600 mt-4 inline-block">Ver más</a>
           </div>
         </div>
@@ -83,7 +112,7 @@
           <img src="https://github.com/Chris3riel/LaravelMovieAPP-CRUD/raw/main/image.png" alt="CRUD LARAVEL MOVIE APP" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold">Crud Laravel Movie App</h3>
-            <p class="mt-2 text-gray-600">CRUD (Create, Read, Update, Delete) de películas con Laravel, PostgreSQL, Livewire y Tailwind CSS permite gestionar información sobre películas de manera eficiente y dinámica. Este tipo de proyecto utiliza herramientas modernas y populares para crear una interfaz de usuario atractiva y una lógica de negocio robusta.</p>
+            <p class="mt-2 text-gray-600 text-justify">CRUD (Create, Read, Update, Delete) de películas con Laravel, PostgreSQL, Livewire y Tailwind CSS permite gestionar información sobre películas de manera eficiente y dinámica. </p>
             <a href="https://github.com/Chris3riel/LaravelMovieAPP-CRUD" class="text-blue-600 mt-4 inline-block">Ver más</a>
           </div>
         </div>
@@ -93,7 +122,7 @@
           <img src="https://github.com/Chris3riel/ecommerce-camping-shop/raw/main/image.png" alt="E-commerce Camping Shop" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold">E-commerce Camping Shop</h3>
-            <p class="mt-2 text-gray-600">Este proyecto es una plataforma de comercio electrónico diseñada para la venta de productos relacionados con camping y actividades al aire libre. La plataforma incluye un catálogo de productos, un carrito de compras, un sistema de pago integrado con PayPal, y una sección de logística para el seguimiento de pedidos.</p>
+            <p class="mt-2 text-gray-600 text-justify">Este proyecto es una plataforma de comercio electrónico diseñada para la venta de productos relacionados con camping y actividades al aire libre. La plataforma incluye un catálogo de productos, un carrito de compras, un sistema de pago integrado con PayPal.</p>
             <a href="https://github.com/Chris3riel/LaravelMovieAPP-CRUD" class="text-blue-600 mt-4 inline-block">Ver más</a>
           </div>
         </div>
@@ -103,7 +132,7 @@
           <img src="./public/img/image.png" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold">Compilador de Python en Java con NetBeans y Ant</h3>
-            <p class="mt-2 text-gray-600">Compilador de Python con Interfaz Gráfica en Java Este proyecto es un compilador de Python con una interfaz gráfica desarrollada en Java. La ejecución del código Python se realiza utilizando la biblioteca Jython, que permite la integración de Python en aplicaciones Java.</p>
+            <p class="mt-2 text-gray-600 text-justify">Compilador de Python con Interfaz Gráfica en Java Este proyecto es un compilador de Python con una interfaz gráfica desarrollada en Java. La ejecución del código Python se realiza utilizando la biblioteca Jython, que permite la integración de Python en aplicaciones Java.</p>
             <a href="https://github.com/Chris3riel/PythonCompilerWithJava" class="text-blue-600 mt-4 inline-block">Ver más</a>
           </div>
         </div>
@@ -113,7 +142,7 @@
           <img src="./public/img/dartCompilerLogo.png" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold"> DartCompiler Compilador de Dart en Java con NetBeans</h3>
-            <p class="mt-2 text-gray-600">El Compilador Java a Dart es una herramienta que te permite convertir código escrito en el lenguaje Java a código Dart equivalente. Esto significa que puedes escribir tus programas en Java y luego ejecutarlos, aprovechando la amplia gama de bibliotecas y herramientas disponibles para Java.</p>
+            <p class="mt-2 text-gray-600 text-justify">El Compilador Java a Dart es una herramienta que te permite convertir código escrito en el lenguaje Java a código Dart equivalente. Esto significa que puedes escribir tus programas en Java y luego ejecutarlos, aprovechando la amplia gama de bibliotecas y herramientas disponibles para Java.</p>
             <a href="https://github.com/Chris3riel/DartCompiler" class="text-blue-600 mt-4 inline-block">Ver más</a>
           </div>
         </div>
@@ -123,7 +152,7 @@
           <img src="https://github.com/Chris3riel/code-vulnerability-scanner/raw/main/image.png" alt="Code Vulnerability Scanner" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold">Code Vulnerability Scanner</h3>
-            <p class="mt-2 text-gray-600">Este proyecto es una aplicación web desarrollada en Flask que analiza el código proporcionado por el usuario para detectar posibles vulnerabilidades de inyección SQL y HTTP.</p>
+            <p class="mt-2 text-gray-600 text-justify">Este proyecto es una aplicación web desarrollada en Flask que analiza el código proporcionado por el usuario para detectar posibles vulnerabilidades de inyección SQL y HTTP.</p>
             <a href="https://github.com/Chris3riel/code-vulnerability-scanner" class="text-blue-600 mt-4 inline-block">Ver más</a>
           </div>
         </div>
@@ -133,7 +162,7 @@
           <img src="./public/img/CVS.png" alt="MyVCS: Sistema de Control de Versiones Personalizado" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold">MyVCS: Sistema de Control de Versiones Personalizado</h3>
-            <p class="mt-2 text-gray-600">MyVCS es un sistema ligero de control de versiones para proyectos pequeños, implementado en shell script. Proporciona comandos básicos para commit, branch, merge y revert.</p>
+            <p class="mt-2 text-gray-600 text-justify">MyVCS es un sistema ligero de control de versiones para proyectos pequeños, implementado en shell script. Proporciona comandos básicos para commit, branch, merge y revert.</p>
             <a href="https://github.com/Chris3riel/code-vulnerability-scanner" class="text-blue-600 mt-4 inline-block">Ver más</a>
           </div>
         </div>
@@ -143,7 +172,7 @@
           <img src="./public/img/CalendarAPP.png" alt="CalendarAPP" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold">API de Google Calendar</h3>
-            <p class="mt-2 text-gray-600">Este proyecto es un ejemplo de cómo utilizar la API de Google Calendar para crear una aplicación web que permite a los usuarios visualizar y crear eventos en su calendario de Google.</p>
+            <p class="mt-2 text-gray-600 text-justify">Este proyecto es un ejemplo de cómo utilizar la API de Google Calendar para crear una aplicación web que permite a los usuarios visualizar y crear eventos en su calendario de Google.</p>
             <a href="https://github.com/Chris3riel/CalendarApp" class="text-blue-600 mt-4 inline-block">Ver más</a>
           </div>
         </div>
@@ -153,7 +182,7 @@
           <img src="./public/img/GanttDiagrams.png" alt="Gantt Diagrams Maker" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold">Creador de Diagramas de Gantt</h3>
-            <p class="mt-2 text-gray-600">GanttMaker es una herramienta en línea para crear y gestionar diagramas de Gantt de manera sencilla y eficiente. Permite a los usuarios cargar datos desde un archivo JSON, visualizar y editar el diagrama de Gantt, y exportar el resultado en diferentes formatos.</p>
+            <p class="mt-2 text-gray-600 text-justify">GanttMaker es una herramienta en línea para crear y gestionar diagramas de Gantt de manera sencilla y eficiente. Permite a los usuarios cargar datos desde un archivo JSON, visualizar y editar el diagrama de Gantt, y exportar el resultado en diferentes formatos.</p>
             <a href="https://github.com/Chris3riel/GanttDiagramsMaker" class="text-blue-600 mt-4 inline-block">Ver más</a>
           </div>
         </div>
@@ -163,18 +192,89 @@
           <img src="./public/img/KanbanProyect.png" alt="Kanban Tableros" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold">Tableros Kanban Para Estudiantes de I.S.C.</h3>
-            <p class="mt-2 text-gray-600">Este proyecto consiste en crear un tablero Kanban sencillo para estudiantes de ingeniería en sistemas, inspirado en herramientas como Jira. El objetivo es proporcionar una herramienta fácil de usar para que los estudiantes puedan gestionar sus proyectos y tareas de manera efectiva.</p>
+            <p class="mt-2 text-gray-600 text-justify">Este proyecto consiste en crear un tablero Kanban sencillo para estudiantes de ingeniería en sistemas, inspirado en herramientas como Jira.</p>
             <a href="https://github.com/Chris3riel/KanbanTablerosParaI.S.C" class="text-blue-600 mt-4 inline-block">Ver más</a>
           </div>
         </div>
-        
 
       </div>
     </div>
   </section>
 
+  <!-- Diseños Ux/Ui-->
+  <section class="bg-gray-100 p-8">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-3xl font-bold text-center mb-8">Mis Diseños UX / UI</h1>
+      
+      <div class="carousel-container p-4">
+        <div class="carousel-track">
+          <!-- Proyecto 1 (Inclinado a la derecha) -->
+          <div class="card tilt-right bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://github.com/Chris3riel/luxUx-Ui/raw/main/image.png" alt="Placeholder" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">LUXMODE UX/UI Design</h3>
+              <p class="mt-2 text-gray-600">LUXMODE, una experiencia de compra en línea dedicada a ofrecer una colección premium de vestidos. Diseño UX/UI de nuestra plataforma, que ha sido cuidadosamente elaborado para proporcionar una experiencia de usuario fluida y atractiva.</p>
+              <a href="https://chris3riel.github.io/luxUx-Ui/" class="text-blue-600 mt-4 inline-block">Ver más</a>
+            </div>
+          </div>
+          
+          <!-- Proyecto 2 (Inclinado a la izquierda) -->
+          <div class="card tilt-left bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://github.com/Chris3riel/CinePlusDesign-Ux-Ui/raw/main/image.png" alt="Placeholder" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">CinePlus UX/UI Design</h3>
+              <p class="mt-2 text-gray-600">Diseño Ux/Ui de una plataforma de peliculas llamada CinePlus es un catálogo de películas en línea que ofrece una experiencia de usuario intuitiva y atractiva. </p>
+              <a href="https://chris3riel.github.io/CinePlusDesign-Ux-Ui/" class="text-blue-600 mt-4 inline-block">Ver más</a>
+            </div>
+          </div>
+          
+          <!-- Proyecto 3 (Inclinado a la derecha) -->
+          <div class="card tilt-right bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://github.com/Chris3riel/TechNews-Ux-Ui/raw/main/image.png" alt="Placeholder" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">TechNews - Portal de Noticias Tecnológicas</h3>
+              <p class="mt-2 text-gray-600">Sitio web dinámico que recopila y muestra las últimas noticias sobre tecnología y desarrollo de software.</p>
+              <a href="https://github.com/Chris3riel/TechNews-Ux-Ui" class="text-blue-600 mt-4 inline-block">Ver más</a>
+            </div>
+          </div>
+          
+          <!-- Proyecto 4 (Inclinado a la izquierda) -->
+          <div class="card tilt-left bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://github.com/Chris3riel/NexusFitt-UxUi/raw/main/image.png" alt="Placeholder" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">App de Seguimiento Fitness</h3>
+              <p class="mt-2 text-gray-600">Aplicación móvil para el seguimiento de rutinas de ejercicio, nutrición y progreso físico personalizado.</p>
+              <a href="https://chris3riel.github.io/NexusFitt-UxUi/" class="text-blue-600 mt-4 inline-block">Ver más</a>
+            </div>
+          </div>
+          
+          <!-- Proyecto 5 (Inclinado a la derecha) -->
+          <div class="card tilt-right bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://github.com/Chris3riel/Elearning-UxUi/raw/main/image.png" alt="Placeholder" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">Plataforma E-Learning</h3>
+              <p class="mt-2 text-gray-600">Sistema completo para la gestión de cursos en línea, incluyendo videos, exámenes y seguimiento de progreso.</p>
+              <a href="https://chris3riel.github.io/Elearning-UxUi/" class="text-blue-600 mt-4 inline-block">Ver más</a>
+            </div>
+          </div>
+          
+          <!-- Proyecto 6 (Inclinado a la izquierda) -->
+          <div class="card tilt-left bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://github.com/Chris3riel/Savoure-UxUi/raw/main/image.png" alt="Placeholder" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">Savoure - Sistema de Reservaciones</h3>
+              <p class="mt-2 text-gray-600">Plataforma para gestionar reservas en restaurantes, con sistema de mesas, horarios y notificaciones.</p>
+              <a href="https://chris3riel.github.io/Savoure-UxUi/" class="text-blue-600 mt-4 inline-block">Ver más</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Habilidades -->
-  <section id="skills" class="py-20 bg-gray-100">
+  <section id="skills" class="py-20 bg-gray-100 animate__fadeInDown">
     <div class="container mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6">Habilidades Técnicas</h2>
       <div class="flex justify-center flex-wrap gap-4">
@@ -192,11 +292,9 @@
         <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Flask</span>
         <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">FastAPI</span>
 
-        <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Uvicorn</span>
         <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Docker</span>
         <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Firebase</span>
-        <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Git</span>
-        <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Github</span>
+        <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">GitHub</span>
 
         <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">PostgreSQL</span>
         <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">MySQL</span>
@@ -222,11 +320,109 @@
         <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Inteligencia Artificial</span>
         <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Machine Learning</span>
         <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Ciencia de Datos</span>
-        <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Desarrollo web</span>
-        <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Frontend</span>
-        <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Backend</span>
+        <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">DevOps</span>
+        <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Git</span>
+        <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Github Actions</span>
+        <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">CI/CD</span>
+        <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">AWS</span>
+        <span class="bg-blue-200 text-blue-800 py-2 px-4 rounded-full">Kubernetes</span>
         
       </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50">
+    <div class="container mx-auto px-4 py-12 max-w-5xl">
+        <header class="bg-gray-950 text-white rounded-lg shadow-lg p-6 mb-8">
+            <h1 class="text-3xl font-bold mb-2">¿Por qué contratarme?</h1>
+            <p class="text-lg">Siendo desarrollador web y teniendo experiencia en Ciberseguridad ayudo a...</p>
+        </header>
+
+        <section class="bg-white rounded-lg shadow-lg p-6 mb-8">
+          
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Sistemas Seguros desde el Diseño</h3>
+                    <p>Implemento principios de seguridad desde las primeras etapas de desarrollo, reduciendo vulnerabilidades y costos de corrección posteriores.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Pruebas de Penetración</h3>
+                    <p>Identifico vulnerabilidades antes que los atacantes, realizando evaluaciones exhaustivas de seguridad en cada proyecto.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Reducción de Riesgos</h3>
+                    <p>Minimizo la exposición a ataques y filtraciones de datos que podrían dañar su reputación y generar pérdidas financieras.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-2">Cumplimiento Normativo</h3>
+                    <p>Aseguro que sus sistemas cumplan con los estándares y regulaciones de seguridad actuales (GDPR, ISO 27001, etc.).</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Beneficios para su Empresa</h2>
+            
+            <ul class="space-y-4">
+                <li class="flex items-start">
+                    <div class="flex-shrink-0 h-6 w-6 text-green-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <p class="font-medium">Protección contra amenazas cibernéticas avanzadas y ataques dirigidos</p>
+                    </div>
+                </li>
+                
+                <li class="flex items-start">
+                    <div class="flex-shrink-0 h-6 w-6 text-green-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <p class="font-medium">Sistemas escalables que mantienen su seguridad incluso cuando crecen</p>
+                    </div>
+                </li>
+                
+                <li class="flex items-start">
+                    <div class="flex-shrink-0 h-6 w-6 text-green-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <p class="font-medium">Reducción de tiempos de inactividad causados por incidentes de seguridad</p>
+                    </div>
+                </li>
+                
+                <li class="flex items-start">
+                    <div class="flex-shrink-0 h-6 w-6 text-green-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <p class="font-medium">Ahorro en costos a largo plazo evitando brechas de seguridad</p>
+                    </div>
+                </li>
+                
+                <li class="flex items-start">
+                    <div class="flex-shrink-0 h-6 w-6 text-green-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <p class="font-medium">Mayor confianza de clientes y socios al demostrar compromiso con la seguridad</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </div>
   </section>
 
@@ -237,9 +433,9 @@
       <p class="mb-4">¿Quieres trabajar juntos? Contáctame:</p>
       <ul class="text-lg">
         <li>Teléfono: +52 7261027712</li>
-        <li>Email: <a href="mailto:chrisurpineda@gmail.com" class="text-blue-600">chrisurpineda@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/Chris3riel" class="text-blue-600">Chris3riel</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/chris-uriel-dominguez-pineda-32a206271" class="text-blue-600">Chris Uriel Domínguez</a></li>
+        <li><i class='bx bx-envelope' ></i>Email: <a href="mailto:chrisurpineda@gmail.com" class="text-blue-600">chrisurpineda@gmail.com</a></li>
+        <li><i class='bx bxl-github'></i>GitHub: <a href="https://github.com/Chris3riel" class="text-blue-600">Chris3riel</a></li>
+        <li><i class='bx bxl-linkedin-square'></i>LinkedIn: <a href="https://www.linkedin.com/in/chris-uriel-dominguez-pineda-32a206271" class="text-blue-600">Chris Uriel Domínguez</a></li>
       </ul>
     </div>
   </section>
